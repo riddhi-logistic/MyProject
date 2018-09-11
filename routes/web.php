@@ -18,3 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+// Get Data
+Route::get('datatable/getposts', ['as'=>'datatable/getposts','uses'=>'HomeController@getPosts']);
