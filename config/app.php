@@ -169,6 +169,7 @@ return [
          * Package Service Providers...
          */
         yajra\DataTables\DataTablesServiceProvider::class,
+        Laravel\Tinker\TinkerServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -178,6 +179,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\UserModelServiceProvider::class,
 	   
 
     ],

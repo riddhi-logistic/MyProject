@@ -21,4 +21,11 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 // Get Data
-Route::get('datatable/getposts', ['as'=>'datatable/getposts','uses'=>'HomeController@getPosts']);
+Route::get('datatable/getposts/{status?}', ['as'=>'datatable/getposts','uses'=>'HomeController@getPosts']);
+
+// delete user
+Route::get('home/destroy/{id}', ['as'=>'home.destroy','uses'=>'HomeController@destroy']);
+
+
+//Route::get('sendbasicemail','MailController@basic_email');
+
